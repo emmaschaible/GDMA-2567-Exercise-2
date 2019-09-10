@@ -22,6 +22,19 @@
     clear: both;
 }
 
+.img-responsive {
+    max-width: 100%;
+}
+
+/* GETTING RID OF THE MARGIN*/
+figure {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
 [class*="col-"] {
     padding: 0 10px;
     margin-bottom: 20px;
@@ -207,10 +220,20 @@
 /* TO BE DELETED LATER */
 
 .wrapper {
-    background-color: rgb(193, 193, 219);
+    background-color: black;
 }
 
 [class*="col-"] div {
-    background-color: black;
+    background-color: aqua;
+    height: 300px;
+}
+
+/* IMAGE SIZING STUFF */
+
+#bg-turtle {
+    background-image: url("../img/bg-turtle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: content-box;
     height: 300px;
 }
